@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Notificacion_fecha</string>
+
+    <string name="date">Fecha</string>
+    <string name="time">Hora</string>
+    <string name="notificacion">Notificacion</string>
+</resources>
