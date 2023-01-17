@@ -73,12 +73,7 @@ class MainActivity : AppCompatActivity() {
                 val myFormat = "dd/MM/yyyy" // mention the format you need
                 val sdf = SimpleDateFormat(myFormat, Locale.US)
                 var cmp=cal.compareTo(fecha)
-                if(cmp>=0) {
-                    DiaCita.text = sdf.format(cal.time)
-                }else{
-                    Toast.makeText(applicationContext, "El dia no puede ser inferior de aqui a dos semanas", Toast.LENGTH_SHORT).show()
-                }
-
+                DiaCita.text = sdf.format(cal.time)
             }, cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH))
             date.datePicker.minDate=fecha.timeInMillis
             date.show()
